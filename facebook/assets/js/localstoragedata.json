@@ -1,0 +1,41 @@
+
+    var users = [
+      {
+          "username": "abinaya",
+          "password": "Abinaya@123",
+          "birthdaycity": "chennai",
+          "currentcity":"chennai",
+          "state":"tamilnadu",
+          "country":"india",
+          "currentjobrole":"ui developer",
+          "currentorganisation":"ET",
+          "college":"mnm jain engineering college",
+          "school":"joseph",
+          "startbool":"false"
+      },
+      {
+        "username": "anu",
+        "password": "Anu@123",
+        "birthdaycity": "chennai1",
+        "currentcity":"chennai1",
+        "state":"tamilnadu",
+        "country":"india",
+        "currentjobrole":"software developer",
+        "currentorganisation":"infosys",
+        "college":"mnm jain engineering college",
+        "school":"vivekanandha",
+        "startbool":"false"
+    },
+    {
+        "username": "sumathi",
+        "password": "Sumathi@123",
+        "birthdaycity": "namakkal",
+        "currentcity":"chennai",
+        "state":"tamilnadu",
+        "country":"india",
+        "currentjobrole":"siftware trainee",
+        "currentorganisation":"TCS",
+        "college":"mnm jain engineering college",
+        "school":"vidhyalaya",
+        "startbool":"false"
+    }]

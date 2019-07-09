@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    
+    <script src="../js/profilepage.js"></script>
+    <script src="../js/localstoragedata.json"></script>
+    <script src="../js/main.js"></script>
+    
+    <title>Profilepage</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <i class="fab fa-facebook iconfb"></i>
+            <div class="search">
+                <input type="text" class="searchprofile" name="searchprofile" id="searchprofile" placeholder="Abinaya" />
+                <i class="fa fa-search magnify" aria-hidden="true"></i>
+            </div>
+            <div></div>
+            <div class="img"></div>
+            <!-- <img src=".././images/propic.jpg" class="propic" alt="propic"> -->
+            <div class="proname">Abinaya</div>
+            <div class="home">Home</div>
+            <div class="create">Create</div>
+            <div class="create">Activity Log</div>
+            <div class="logout" onclick="logOut()">LogOut</div>
+           <!------------<i class="fa fa-user-friends"></i>
+            <i class="fa fa-comment" aria-hidden="true"></i>
+            <i class="fa fa-bell" aria-hidden="true"></i>
+            <i class="fa fa-question-circle" aria-hidden="true"></i>
+            <i class="fa fa-sort-desc" aria-hidden="true"></i>------------>
+        </header>
+        <section class="headerpro">
+            <div class="coverimg">
+                <div class="divbg">
+                    <img src="../images/propic.jpg" alt="">
+                </div>
+                <p class="editproname">Abinaya</p>
+                <div class="editpro">
+                    <div class="editbuttondiv">
+                        <i class="fa fa-edit editbut" aria-hidden="true"></i>
+                        <p>Edit Profile</p>
+                    </div>
+                </div>
+                <div class="activitylog">
+                    <div class="activitybuttondiv" onclick="activitylog()">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <p>Activity Log</p>
+                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+            <div class="navfb">
+                <div class="timeline borderright">TimeLine</div>
+                <div class="about borderright">About</div>
+                <div class="friends borderright">Friends</div>
+                <div class="photos borderright">Photos</div>
+                <div class="Archieve borderright">Archive</div>
+                <div class="more borderright">More</div>
+            </div>
+        </section>
+        <section class="body">
+            <div class="leftsidebar"><p class="nonediv">lihr</p>
+                <div class="edit1">
+                        <i class="fa fa-star editbut1" aria-hidden="true"></i>
+                        <div class="edituser">Lorem ipsum dolor sit.</div>
+                        <i class="fa fa-times timesicon" aria-hidden="true"></i>
+                </div>
+                <div class="bio">
+                <div class="intro">
+                        <i class="fa fa-globe globeuser" aria-hidden="true"></i>
+                        <div>Intro</div>
+                </div>
+                <div class="intro1">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="bluetxt">Intro</div>
+                </div>
+                <hr class="hrclass"/>
+                <div class="biodetails">
+                    <a class="userinfo">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="bluetxt pcollege">Exercitationem, possimus.</span></div>
+                        <i class="fa fa-edit editbut" aria-hidden="true" onclick="usereditpage()"></i>
+                     </a>
+                    <a class="userinfo">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="bluetxt pschool">Exercitationem, possimus.</span></div>
+                     </a>
+                    <a class="userinfo">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="bluetxt post">Exercitationem, possimus.</span></div>
+                    </a>
+                    <a class="userinfo">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="bluetxt prole">Exercitationem, possimus.</span></div>
+                     </a>
+                    <a class="userinfo">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <div>Lives in <span class="bluetxt currentcity"> Chennai, india</span></div>
+                     </a>
+                    <a class="userinfo">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <div>From. <span class="bluetxt birthdaycity"> Kumbakonam</span></div>
+                     </a>
+                    <a class="userinfo">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <div> single</div>
+                     </a>
+                    <a class="userinfo">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <div>Joined August 2013</div>
+                     </a>
+                     <hr class="hrclass"/>
+                     <div class="intro1"> <i class="fa fa-briefcase" aria-hidden="true"></i>
+                     <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, inventore!</div>
+                     <div class="bluetxt">Add to Featured</div>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+            <div class="rightsidebar"><p class="nonediv">lihr</p>
+                <div class="navdiv">
+                    <a href="#" class="borderright"><i class="fas fa-pen"></i> Create Post</a>
+                    <a href="#" class="borderright"><i class="fas fa-camera"></i> Photo/Video</a>
+                    <a href="#" class="borderright"><i class="fas fa-video"></i> Live Video</a>
+                    <a href="#" class="borderleft"><i class="fas fa-flag"></i> Life Event</a>
+                </div>
+                <div class="postactivity">
+                    <div class="txt1">
+                    <img src="../images/propic.jpg" alt="sample">
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, cumque.</span></div>
+                    <hr class="hrclass"/>
+                    <div class="useractivity1">
+                       <a class="useractivity"><i class="fas fa-camera"></i> Photo/Video</a>
+                       <a class="useractivity" style="justify-self: center;"><i class="fa fa-user" aria-hidden="true"></i> Tag Friends</a>
+                       <a class="useractivity"><i class="fa fa-edit" aria-hidden="true"></i> Feeling/Activity</a>
+                       <a class="useractivity" style="justify-self: center;"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="userview">
+                    <div class="postdiv">
+                        <div>Post</div>
+                    </div>
+                    <div class="editbuttondiv1">
+                        <i class="fa fa-server editbut" aria-hidden="true"></i>  
+                        <!-- <i class="fa fa-edit editbut" aria-hidden="true"></i> -->
+                        <p>Manage Posts</p>
+                    </div>
+                    <div class="divgrid">
+                    <div class="editbuttondiv1">
+                            <i class="fa fa-bars editbut" aria-hidden="true"></i>
+                        <p>List View</p>
+                    </div>
+                    <div class="editbuttondiv1">
+                            <i class="fa fa-th-large editbut" aria-hidden="true"></i>
+                        <!-- <i class="fa fa-edit editbut" aria-hidden="true"></i> -->
+                        <p>Grid View</p>
+                    </div></div>
+                </div>
+                <div class="fbfeed">
+                        <div class="feeddiv2">
+                        <img class="propicedit" src="../images/propic.jpg" alt="sample">
+                        <div class="feeddiv1"><div>Abinaya</div>
+                        <div>June16 at 4:56 PM<i class="fa fa-users" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                        </div>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                    <img src="../images/coverimg.jpg" alt="sample">
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

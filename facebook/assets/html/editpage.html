@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Editpage</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/editpage.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="../js/editpage.js"></script>
+</head>
+<body>
+    <div class="container">
+            <header>
+                <i class="fab fa-facebook iconfb"></i>
+                <div class="search">
+                    <input type="text" class="searchprofile" name="searchprofile" id="searchprofile" placeholder="Abinaya" />
+                    <i class="fa fa-search magnify" aria-hidden="true"></i>
+                </div>
+                <div></div>
+                <div class="img"></div>
+                <!-- <img src=".././images/propic.jpg" class="propic" alt="propic"> -->
+                <div class="proname">Abinaya</div>
+                <div class="home">Home</div>
+                <div class="create">Create</div>
+                <div class="create">Activity Log</div>
+                <div class="logout">LogOut</div>
+            </header>
+            <div class="grid-container">
+        <section class="headerpro">
+                <div class="coverimg">
+                    <div class="divbg">
+                        <img src="../images/propic.jpg" alt="">
+                    </div>
+                    <p class="editproname">Abinaya</p>
+                    <div class="editpro">
+                        <div class="editbuttondiv">
+                            <i class="fa fa-edit editbut" aria-hidden="true"></i>
+                            <p>Edit Profile</p>
+                        </div>
+                    </div>
+                    <div class="activitylog">
+                        <div class="activitybuttondiv">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                            <p>Activity Log</p>
+                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="navfb">
+                    <div class="timeline borderright">TimeLine</div>
+                    <div class="about borderright">About</div>
+                    <div class="friends borderright">Friends</div>
+                    <div class="photos borderright">Photos</div>
+                    <div class="Archieve borderright">Archive</div>
+                    <div class="more borderright">More</div>
+                </div>
+            </section>
+            <section class="userbasicinfo">
+                <div class="aboutuserinfo">
+                    <a><i class="fa fa-edit editbut" aria-hidden="true"></i>About</a>
+                </div>
+                <div class="leftsection">
+                    <div class="box active" id="box_0">overview</div>
+                    <div class="box" id="box_1">Personal Details</div>
+                    <div class="box" id="box_2">Education</div>
+                    <div class="box" id="box_3">Word & Organisation</div>
+                </div>
+                <div class="rightsection">
+                    <div class="ewrapper">
+                    <div class="ewholewrapper0 euseredit">
+                    <div class="eusername einputclass">
+                        <label for="">User Name</label>
+                        <input type="text" name="eusername" id="eusername" placeholder="your name...." />
+                    </div>
+                    <div class="eusername einputclass">
+                        <label for="">Birth City</label>
+                        <input type="text" name="ebirthcity" id="ebirthcity" placeholder="your birthcity" />
+                    </div>
+                    <div class="ecurrentcity einputclass">
+                        <label for="">Current City</label>
+                        <input type="text" name="ecurrentcity" id="ecurrentcity" placeholder="your Current City"/>
+                    </div>
+                    <div class="estate einputclass">
+                        <label for="">State</label>
+                        <input type="text" name="estate" id="estate" placeholder="Your State" />
+                    </div>
+                    <div class="ecountry einputclass">
+                        <label for="">Country</label>
+                        <input type="text" name="ecountry" id="ecountry" placeholder="Your Country" />
+                    </div>
+                </div>
+                <div class="ewholewrapper1 euseredit">
+                    <div class="ecollege einputclass">
+                        <label for="">College</label>
+                        <input type="text" name="ecollege" id="ecollege" placeholder="Enter college Name"/>
+                    </div>
+                    <div class="eschool einputclass">
+                        <label for="">School</label>
+                        <input type="text" name="eschool" id="eschool" placeholder="Enter school Name"/>
+                    </div>
+                </div>
+                <div class="ewholewrapper2 euseredit">
+                    <div class="ework einputclass">
+                        <label for="">Current Job Role</label>
+                        <input type="text" name="ework" id="ework" placeholder="Enter Designation Detail"/>
+                    </div>
+                    <div class="eorganisation einputclass">
+                        <label for="">Current Organisation</label>
+                        <input type="text" name="eorganisation" id="eorganisation" placeholder="Enter current Organisation"/>
+                    </div>
+                </div>
+                    <div class="ebutton">
+                        <button class="cancel">Cancel</button>
+                        <button class="savechanges" onclick="savechanges()">Save Changes</button>
+                    </div>
+                </div>
+                </div>
+            </section>
+            </div>
+    </div>
+</body>
+</html>

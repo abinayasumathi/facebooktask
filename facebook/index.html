@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <script src="assets/js/localstoragedata.json"></script>
+    <title>Facebook</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="txtdiv">
+                <p class="text">Facebook</p>
+            </div>
+            <div class="emaildiv">
+                <p>Email or Phone</p>
+                <input id="email" placeholder="Email" type="mail" name="name" /><br>
+                <p class="keeptxt">
+                    <input type="checkbox" /><span>keep me logged in</span>
+                </p>
+                
+            </div>
+            
+            <div class="passworddiv">
+                <p>Password</p>
+                <input id="password" placeholder="Password" type="password" name="password" /><br>
+                <p>Forgotten your password?</p>
+            </div>
+            <button onclick="login();" style="cursor: pointer;">Log in</button>
+        </header>
+        <section>
+            <div class="connectpeople">
+                <p>Facebook helps you connect and share with the people in your life.</p>
+                <img src="assets/images/connectpeople.png" alt="sampleimages">
+            </div>
+            <div class="signup">
+                <h3 class="sampletxt">Create an account</h3>
+                <p class="sampletxt1">It's free and always will be.</p>
+                <input type="text" class="firstname" name="firstname" id="firstname" placeholder="First Name" />
+                <input type="text" class="lastname" name="lastname" id="lastname" placeholder="Last Name" />
+                <input type="text" class="email" name="email" id="mail_box" placeholder="Email" />
+                <input type="text" class="re_enter" name="re_enter" id="re_enter" placeholder="Re-enter email" />
+                <input type="text" class="password" name="signup_password" id="password" placeholder="Password" />
+                <input type="date" class="start" name="trip-start" id="start"  value="2018-07-22"
+                min="2018-01-01" max="2018-12-31"/>
+               <div class="malegender">
+                    <input type="radio" class="malegender1" name="gender" value="male" checked><span>Male</span>
+               </div>
+               <div class="femalegender">
+                    <input type="radio" class="femalegender" name="gender" value="female"><span>Female</span> 
+               </div>
+                <p class="sampletxt2">By clicking Create an account, you agree to our Terms and that 
+                        you have read our Data Policy, including our Cookie Use.</p>
+                <button class="createaccount" onclick="storedata()">Create an account</button>
+                <hr class="rule">
+                <p class="sampletxt3">Create a Page for a celebrity, band or business.</p>
+            </div>
+        </section>
+        <div class="hover_bkgr_fricc">
+                <span class="helper"></span>
+                <div>
+                    <div class="popupCloseButton" onclick="popupCloseButton()">X</div>
+                    <p>UserName Or Password<br />Incorrect!</p>
+                </div>
+            </div>
+</div>
+</body>
+</html>
